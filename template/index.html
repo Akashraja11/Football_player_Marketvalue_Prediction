@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>  
+  <body>
+   <div class="container1">
+
+    <div class="brand-title">PREDICT FOOTBALL PLAYER'S VALUE</div>
+      <div class="inputs">
+        <form action="{{url_for('predict')}}" method="POST">
+          
+          <label>RAA</label>
+          <input type="text" name="RAA" placeholder="300 to 615" required="required" />
+          <label>Wins</label>
+          <input type="text" name="Wins" placeholder="1.00 to 2.04" required="required" />
+          <label>EFscore</label>
+          <input type="text" name="EFscore" placeholder="0.000 to 0.365" required="required" />
+          <label>Salary</label>
+          <input type="text" name="Salary" placeholder="15000.000 to 3000000.000" required="required" />
+
+          <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+          
+
+        </form>
+      </div>
+      
+    </div> 
+  </body>
+</html>

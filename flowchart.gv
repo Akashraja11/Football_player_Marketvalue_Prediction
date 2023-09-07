@@ -1,0 +1,11 @@
+digraph {
+	A [label="Load Data"]
+	B [label="Preprocess Data"]
+	C [label="Split Data"]
+	D [label="Train Models"]
+	E [label="Evaluate Models"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+}
